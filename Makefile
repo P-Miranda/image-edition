@@ -9,3 +9,5 @@ $(VENV): $(REQUIREMENTS)
 	$(PYTHON) -m pip install --upgrade pip
 	$(PYTHON) -m pip install -r $(REQUIREMENTS)
 
+all: $(VENV)
+	$(PYTHON) main.py
